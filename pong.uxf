@@ -1,0 +1,38 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>875</x><y>570</y><w>210</w><h>110</h></coordinates><panel_attributes>Paddle
+--
+height: int
+weight: int
+x, y: int
+--
+draw(GraphicsContext gc): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>875</x><y>410</y><w>290</w><h>120</h></coordinates><panel_attributes>Ball
+--
+x, y: int
+dx, dy: int
+--
+move
+collides(GameLoop loop, int width, int height): void
+collides(Paddle paddle, boolean left): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>485</x><y>400</y><w>210</w><h>280</h></coordinates><panel_attributes>Game Loop
+--
+gc
+leftPoints
+rightPoints
+totalTime
+--
+incLeft()
+incRight()
+handle(ms)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>400</y><w>210</w><h>80</h></coordinates><panel_attributes>FXIntro
+--
+--
+start()
+_main()_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>450</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=derBall</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>600</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=leftPaddle</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>640</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=rightPaddle</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>390</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;creates&gt;&gt;</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>70</x><y>140</y><w>670</w><h>120</h></coordinates><panel_attributes>JavaFX
+--
+bg=none</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>200</y><w>100</w><h>30</h></coordinates><panel_attributes>/Application/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>200</y><w>100</w><h>30</h></coordinates><panel_attributes>/AnimationTimer/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>250</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>250</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element></diagram>
